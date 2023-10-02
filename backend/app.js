@@ -1,8 +1,8 @@
 // app.js as entry point
 
 // setup cors
-//const cors = require('cors');
-//app.use(cors({ origin: true, credentials: true }));
+const cors = require('cors');
+app.use(cors({ origin: true, credentials: true }));
 
 // setup Express server-side app
 const express = require('express');
