@@ -2,12 +2,13 @@
 
 // setup cors
 const cors = require('cors');
-app.use(cors({ origin: true, credentials: true }));
 
 // setup Express server-side app
 const express = require('express');
 const app = express();
 app.use(express.json({ extended: false }));
+app.use(cors({ origin: true, credentials: true }));
+
 
 // setup Mongodb on backend
 const connectDB = require('./config/db');
